@@ -5,7 +5,7 @@ Block explorer for ELT
 
 # 一.	Ubuntu系统
 
-准备工作
+1. 准备工作
 
 先进行apt-get更新使用命令
 
@@ -17,7 +17,7 @@ apt-get install libtoolpkg-configautoconfautomakeuuid uuid-dev
 
 apt-get install build-essential libssl-dev libdb++-dev libboost-all-dev libqrencode-dev
 
-安装nvm
+2. 安装nvm
 
 首先下载nvm，这里我们需要使用git，使用以下命令
 
@@ -37,7 +37,7 @@ vim .bashrc
 
 source .bashrc
 
-使用nvm安装node 4.6.0版本
+3. 使用nvm安装node 4.6.0版本
 
 使用一下命令来安装,并且将其设置为默认版本。
 
@@ -47,7 +47,7 @@ nvm alias default 4.6.0
 
 安装好node中会自动安装npm，node package manage
 
-安装编译zmq
+4. 安装编译zmq
 
 使用git获取libzmq
 
@@ -67,7 +67,7 @@ make check && make install && sudo ldconfig
 
 npm install -g zmq
 
-安装mongodb
+5. 安装mongodb
 
 使用命令下载安装包
 
@@ -102,7 +102,6 @@ cd到mongodb目录下的bin文件夹启动mongodb
 # 二.安装bitcore
 
 1.将bitcore 目录移动到安装浏览器的系统 的/root/.nvm/versions/node/v4.6.0/lib/node_modules/
-
 2.mv eltcore /root/.eltcore
 3.mv eltoken /root/.eltoken
 启动bitcore 目录下的bitcore 程序启动浏览器
